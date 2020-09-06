@@ -1,5 +1,6 @@
 import Utilites.Driver;
 import org.apache.log4j.Logger;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -39,10 +40,10 @@ public class MainPageTest {
     }
 
 
-    /*@After
+    @After
     public void tearDown(){
         logger.info("start MainPageTest readDown");
         Driver.close();
         logger.info("finish MainPageTest readDown");
-    }*/
+    }
 }

@@ -13,11 +13,7 @@ public class ForgotPassPage {
     private By  mailFild = By.xpath("//*[@name=\"email\"]");
     private By  ruMailError = By.xpath("//*[text()=\"Неправильная Эл. почта\"]");
     private By  findBtn = By.xpath("//*[@id=\"recovery-check\"]");
-    //private By  logo = By.xpath("");
-    //private By  logo = By.xpath("");
-    //private By  logo = By.xpath("");
-    //private By  logo = By.xpath("");
-    //private By  logo = By.xpath("");
+
 
     public String getLogoText(){
         return driver.findElement(logo).getText();

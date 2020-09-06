@@ -9,15 +9,13 @@ public class ForgotPassPageTest {
 
     private ForgotPassPage forgotPassPage;
     private Logger logger;
-    private MainPage mainPage;
+
 
     @Before
     public void setUp(){
         logger = Logger.getLogger("new Logger");
         Driver.getDriver().get("https://profile.tut.by/recover.html");
         forgotPassPage = new ForgotPassPage(Driver.getDriver());
-
-
     }
 
     @Test
@@ -37,11 +35,11 @@ public class ForgotPassPageTest {
 
 
 
-    /*@After
+    @After
     public void tearDown(){
         logger.info("start ForgotPassPageTest readDown");
         Driver.close();
         logger.info("finish ForgotPassPageTest readDown");
-    }*/
+    }
 }
 

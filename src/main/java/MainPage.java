@@ -18,9 +18,7 @@ public class MainPage {
     private By rememberRadioButton = By.xpath("//*[@id=\"memory\"]");
     private By forgotLink = By.xpath("//*[text()=\"Забыли пароль?\"]");
     private By mailOrPassError = By.xpath("//*[text()=\"Неверное имя пользователя или пароль\"]");
-    /*private By singUpLink = By.xpath("");
-    private By singUpLink = By.xpath("");
-    private By singUpLink = By.xpath("");*/
+
 
     public String getLogoText(){
         return driver.findElement(logo).getText();
@@ -44,18 +42,19 @@ public class MainPage {
         driver.findElement(toLogInButton).click();
         return new MainPage(driver);
     }
-    public MainPage signInMail(String mail, String pass){
-        clickSignInButton();
-        this.typeMail(mail);
-        this.typePass(pass);
-        clickToLogBtn();
-        return new MainPage(driver);
-    }
     public MainPage clickRememberRadioBtn(){
         WebElement checkbox = driver.findElement(rememberRadioButton);
         if(!checkbox.isSelected()){
             checkbox.click();
         }return new MainPage(driver);
+    }
+    public MainPage signInMail(String mail, String pass){
+        clickSignInButton();
+        this.typeMail(mail);
+        this.typePass(pass);
+        clickRememberRadioBtn();
+        clickToLogBtn();
+        return new MainPage(driver);
     }
     public MainPage clickForgotLink(){
         driver.findElement(forgotLink).click();
