@@ -19,9 +19,9 @@ public class MainPageTest {
 
     @Test
     public void getHeadingTest(){
-        logger.info("start MainPage test getHeadinhTest");
+        logger.info("start MainPage test getHeadingTest");
         Assert.assertEquals("", mainPage.getLogoText());
-        logger.info("finish MainPage test getHeadinhTest");
+        logger.info("finish MainPage test getHeadingTest");
     }
 
     @Test

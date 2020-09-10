@@ -20,9 +20,9 @@ public class ForgotPassPageTest {
 
     @Test
     public void getHeadingTest(){
-        logger.info("start ForgotPassPageTest test getHeadinhTest");
+        logger.info("start ForgotPassPageTest test getHeadingTest");
         Assert.assertEquals("", forgotPassPage.getLogoText());
-        logger.info("finish ForgotPassPageTest test getHeadinhTest");
+        logger.info("finish ForgotPassPageTest test getHeadingTest");
     }
 
     @Test
